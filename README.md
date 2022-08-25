@@ -1,5 +1,9 @@
 # A basic NFT Marketplace
 
+## Some screenshots
+| col 1      | col 2      |
+|------------|-------------|
+| <img src="https://github.com/leKg1/nft-marketplace/blob/bac3a09e2ed633e3214dcbea807d1d3635718b63/src/assets/project-screeshot-3.png" width="250"> | <img src="https://github.com/leKg1/nft-marketplace/blob/bac3a09e2ed633e3214dcbea807d1d3635718b63/src/assets/project-screenshot-4.png" width="250"> |
 ## Technology Stack & Tools
 
 - Solidity (Writing Smart Contract)
@@ -15,13 +19,13 @@
 
 ### 2. Install Dependencies:
 ```
-$ cd nft_marketplace
+$ cd nft-marketplace
 $ npm install
 ```
  
 
 ### 3. Launch 
-`$ npm run start`
+`$ npm start`
 
 License
 ----
