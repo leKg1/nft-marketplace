@@ -19,6 +19,11 @@ contract NFTMarketplace is ListingPrice, ListToken, GetNFTs {
         owner = payable(msg.sender);
     }
 
+    /**
+     * @dev Transfer the token to the new seller, approve the marketplace to sell NFT on seller's behalf, 
+     * transfer the listing fee to the marketplace creator and the proceeds from the sale to the seller
+     * @param tokenId The actual token to be sold by user
+     */
     function executeSale(uint256 tokenId) public payable {
         uint price = _idToListedToken[tokenId].price;
         address seller = _idToListedToken[tokenId].seller;
