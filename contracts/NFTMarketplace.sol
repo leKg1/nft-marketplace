@@ -2,11 +2,13 @@
 pragma solidity ^0.8.0;
 
 import "hardhat/console.sol";
-import "./libraries/ListingPrice.sol";
-import "./libraries/ListToken.sol";
-import "./libraries/GetNFTs.sol";
+import "./core/ListingPrice.sol";
+import "./core/ListToken.sol";
+import "./core/GetNFTs.sol";
 
 contract NFTMarketplace is ListingPrice, ListToken, GetNFTs {
+
+    using Counters for Counters.Counter;
 
     /**
      * @dev Keeps track of the number of items sold on the marketplace
